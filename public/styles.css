@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: hsl(150, 50%, 10%);
+    color: hsl(330, 50%, 90%);
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+header {
+    display:flex;
+    align-content: center;
+    padding: 1rem;
+    background-color: hsl(330, 20%, 20%);
+    color: hsl(150, 50%, 90%);
+}
+
+header h1 {
+    padding-left: 5rem
+}
+
+ul#site-nav {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 0;
+    width: 60%;
+    margin-top: 0.125rem;
+}
+
+#site-nav li {
+    list-style: none;
+    font-size: 1.25rem;
+    border: 1px solid hsl(330, 30%, 70%);
+    padding: 0.25rem 1.5rem;
+    background-color: hsl(330, 40%, 30%);
+}
+
+#site-nav li:hover {
+    background-color: hsl(350, 50%, 40%);
+}
+
+#site-nav li:active {
+    color: hsl(150, 50%, 60%);
+}
+
+#site-nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section#about {
+    margin: 2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#about img {
+    height: 18rem;
+    margin-right: 4rem;
+}
+
+#about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about-container p {
+    width: 75%;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 1.125rem;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#projects-container p {
+    padding: 1rem;
+}
+
+#contact {
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#contact p {
+    margin: 0.5rem;
+}
