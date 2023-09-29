@@ -23,6 +23,11 @@ header h1 {
     padding-left: 5rem
 }
 
+.site-head a {
+    text-decoration: none;
+    color: hsl(150, 50%, 90%)
+}
+
 ul#site-nav {
     display: flex;
     justify-content: space-around;
@@ -94,6 +99,10 @@ h4 {
     justify-content: space-around;
 }
 
+#about-container img {
+    margin: 3rem 4rem;
+}
+
 #about-container p {
     width: 75%;
     margin: auto;
@@ -162,6 +171,7 @@ div.contact {
     border-radius: 0.25rem;
     margin: 1rem auto;
     width: 90%;
+    cursor: pointer;
 }
 
 .explanation {
@@ -224,5 +234,54 @@ footer {
 
     div#burger-menu {
         display: block;
+    }
+
+    #about-container {
+        display: inline-block;
+    }
+
+    img#profile-pic {
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #about-container aside {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img#profile-pic {
+        float: none;
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills li {
+        margin: 0.5rem auto;
+    }
+
+    .skills svg {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    header h1 {
+        padding-left: 0.25rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .contact-links {
+        flex-direction: column;
     }
 }
