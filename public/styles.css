@@ -58,10 +58,6 @@ ul#site-nav {
     color: inherit;
 }
 
-section#about {
-    margin: 2rem;
-}
-
 div#burger-menu {
     display: none;
 }
@@ -93,6 +89,10 @@ h3 {
 
 h4 {
     margin: 1rem;
+}
+
+section#about {
+    margin: 2rem;
 }
 
 #about img {
@@ -131,6 +131,59 @@ h4 {
 
 .project h4 {
     text-align: center;
+}
+
+.project {
+    border: 1px solid hsl(230, 50%, 60%);
+    background-color: hsl(230, 50%, 30%);
+    border-radius: 0.25rem;
+    margin: 1rem auto;
+    width: 90%;
+    cursor: pointer;
+}
+
+.explanation {
+    display: none;
+    margin: 1rem auto;
+}
+
+.explanation img {
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+#skills {
+    background-color:hsl(230, 50%, 70%);
+    color:hsl(50, 50%, 10%);
+    padding-top: 0.5rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    list-style: none;
+}
+
+.skills svg {
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 2rem;
+}
+
+.link {
+    margin: 1rem auto;
 }
 
 div.contact {
@@ -176,60 +229,6 @@ div.contact {
 
 .contact-links svg:hover {
     color: hsl(230, 70%, 80%);
-}
-
-.project {
-    border: 1px solid hsl(230, 50%, 60%);
-    background-color: hsl(230, 50%, 30%);
-    border-radius: 0.25rem;
-    margin: 1rem auto;
-    width: 90%;
-    cursor: pointer;
-}
-
-.explanation {
-    display: none;
-    margin: 1rem auto;
-}
-
-.explanation img {
-    width: 50%;
-    height: auto;
-    float: right;
-}
-
-#skills {
-    background-color:hsl(230, 50%, 70%);
-    color:hsl(50, 50%, 10%);
-    padding-top: 0.5rem;
-}
-
-.skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.skills ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.skills li {
-    list-style: none;
-}
-
-.skills svg {
-    height: 4rem;
-    width: 4rem;
-    margin-bottom: 2rem;
-}
-
-.link {
-    margin: 1rem auto;
 }
 
 footer {
