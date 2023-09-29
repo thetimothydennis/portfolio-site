@@ -57,12 +57,30 @@ section#about {
     margin: 2rem;
 }
 
+div#burger-menu {
+    display: none;
+}
+
+#burger-menu svg {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    right: 2rem;
+    border: 1px solid hsl(330, 50%, 90%);
+    border-radius: 0.25rem;
+}
+
 h2 {
     text-align: center;
+    margin: 2rem auto;
 }
 
 h3 {
     text-align: center;
+}
+
+h4 {
+    margin: 1rem;
 }
 
 #about img {
@@ -94,12 +112,117 @@ h3 {
     padding: 1rem;
 }
 
-#contact {
-    margin: auto;
-    padding: 0.5rem;
+.project h4 {
     text-align: center;
+}
+
+div.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 5%
+}
+
+#contact {
+    margin: 0px auto;
+    padding: 0.5rem;
+    height: 76vh;
+}
+
+#contact h2 {
+    margin: 2rem;
 }
 
 #contact p {
     margin: 0.5rem;
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+}
+
+.contact-links li {
+    margin: 1rem;
+    list-style: none;
+}
+
+.contact-links img {
+    width: 4rem;
+}
+
+.contact-links svg {
+    width: 4rem;
+    color:hsl(150, 50%, 90%);
+}
+
+.project {
+    border: 1px solid hsl(150, 50%, 60%);
+    border-radius: 0.25rem;
+    margin: 1rem auto;
+    width: 90%;
+}
+
+.explanation {
+    display: none;
+    margin: 1rem auto;
+}
+
+.explanation img {
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    list-style: none;
+}
+
+.skills svg {
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 2rem;
+}
+
+.link {
+    margin: 1rem auto;
+}
+
+footer {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(330, 20%, 20%);
+    color: hsl(150, 50%, 90%);
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 860px) {
+    ul#site-nav {
+        display: none;
+    }
+
+    #site-nav li {
+        text-align: center;
+    }
+
+    div#burger-menu {
+        display: block;
+    }
 }
