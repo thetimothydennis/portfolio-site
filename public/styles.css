@@ -20,7 +20,15 @@ header {
 }
 
 header h1 {
-    padding-left: 5rem
+    padding-left: 5rem;
+}
+
+h1 a:hover {
+    color:hsl(70, 50%, 40%);
+}
+
+h1 a:active {
+    color: hsl(70, 30%, 80%);
 }
 
 .site-head a {
@@ -50,7 +58,7 @@ ul#site-nav {
 }
 
 #site-nav li:active {
-    color: hsl(70, 50%, 60%);
+    color: hsl(70, 30%, 80%);
 }
 
 #site-nav a {
@@ -302,11 +310,18 @@ footer {
 @media only screen and (max-width: 420px) {
     header h1 {
         padding-left: 0.25rem;
+        font-size: 1.6rem;
     }
 }
 
 @media only screen and (max-width: 340px) {
+    #contact {
+        height: 130vh
+    }
+
     .contact-links {
         flex-direction: column;
     }
+
+
 }
