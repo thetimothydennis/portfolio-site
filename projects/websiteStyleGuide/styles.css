@@ -1,0 +1,240 @@
+/* Font declarations
+
+@font-face {
+    font-family: "Titillium-Web";
+    src: url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+}
+
+@font-face {
+    font-family: "Rowdies";
+    src: url("https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap");
+}
+
+@font-face {
+    font-family: "Economica";
+    src: url("https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap");
+}
+
+@font-face {
+    font-family: "Istok Web";
+    src: url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+} */
+
+/* Universal styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 15%);
+    color: hsl(0, 0%, 95%);
+}
+
+/* element styles */
+
+a {
+    color: hsl(0, 0%, 75%);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: hsl(0, 0%, 50%);
+}
+
+a:active {
+    color: hsl(0, 0%, 70%);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+h3 {
+    font-size: larger;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+section {
+    border: 2px solid hsl(0, 0%, 50%);
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: hsla(0, 0%, 40%, 0.5);
+    width: 100%;
+    border: 1px solid hsla(0, 0%, );
+    z-index: 10
+}
+
+main {
+    position: relative;
+    top: 80px;
+}
+
+/* class styles */
+
+.navbar ul {
+    margin: 20px auto 30px;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0px 10px;
+    padding: 5px 30px;
+    font-size: larger;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 25%);
+}
+
+.navbar li:hover {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.navbar li:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+/* id styles */
+
+#colors {
+    text-align: center;
+    display: block;
+}
+
+#colors div {
+    display: inline-block;
+    margin: 30px 10px;
+    padding: 100px 30px;
+    border: 2px solid hsl(0, 0%, 50%);
+    width: 220px;
+    max-height: 400px;
+    height: 300px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+#swatch1 {
+    background-color: hsl(200, 50%, 10%);
+}
+
+#swatch2 {
+    background-color: hsl(20, 50%, 80%);
+    color: hsl(200, 50%, 10%);
+}
+
+#swatch3 {
+    background-color: hsl(20, 70%, 50%);
+}
+
+#swatch4 {
+    background-color: hsl(40, 75%, 45%);
+}
+
+#swatch5 {
+    background-color: hsl(220, 50%, 20%);
+}
+
+#fonts div {
+    border: 1px solid hsl(0, 0%, 50%);
+    display: inline-block;
+    text-align: center;
+    height: 300px;
+    width: 800px;
+    margin: 20px 60px;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+#fonts p {
+    margin: 20px auto;
+    font-size: 30px
+}
+
+#font1 p {
+    font-family: "Titillium Web";
+}
+
+#font2 p {
+    font-family: "Rowdies";
+}
+
+#font3 p {
+    font-family: "Economica";
+}
+
+#font4 p {
+    font-family: "Istok Web";
+}
+
+section#fonts {
+    text-align: center;
+}
+
+#text-styles div {
+    text-align: center;
+    border: 1px solid hsl(0, 0%, 50%);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 600px;
+    padding: 30px 50px;
+}
+
+#text-styles li {
+    text-align: left;
+}
+
+#text-styles p {
+    margin: 20px 50px;
+}
+
+#style1 p {
+    font-weight: 700;
+    font-size: 28px;
+    font-family: "Rowdies";
+}
+
+#style2 p {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Titillium Web";
+}
+
+#style3 p {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Istok Web";
+}
+
+#style4 p {
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Economica";
+}
+
+@media only screen and (max-width: 485px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        margin: 0.5rem auto;
+    }
+
+    main {
+        top: 180px;
+    }
+}
