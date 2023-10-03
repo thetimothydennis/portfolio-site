@@ -86,17 +86,37 @@ div#burger-menu {
     background-color: hsl(70, 50%, 40%);
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    margin: 2rem auto;
+}
+
+main h1 {
+    margin: 1rem auto;
+    font-size: 3rem
+}
+
+h2, h3, h4, h5, h6 {
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 1.75rem;
 }
 
 h3 {
-    text-align: center;
+    font-size: 1.5rem;
 }
 
 h4 {
-    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.95rem;
 }
 
 section#about {
@@ -239,6 +259,35 @@ div.contact {
     color: hsl(230, 70%, 80%);
 }
 
+.education-block, .work-block {
+    margin: 2.5rem auto;
+}
+
+#work-experience {
+    background-color: hsl(200, 50%, 20%);
+    padding: 1.5rem;
+}
+
+.work-block p {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 70%
+}
+
+#skills p {
+    max-width: 70%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#references {
+    background-color:hsl(230, 50%, 70%);
+    color:hsl(50, 50%, 10%);
+    text-align: center;
+    padding: 1.5rem;
+    padding-bottom: 4.5rem;
+}
+
 footer {
     height: 5rem;
     display: flex;
@@ -249,7 +298,7 @@ footer {
     font-weight: bolder;
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1024px) {
     ul#site-nav {
         display: none;
     }
