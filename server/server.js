@@ -8,7 +8,7 @@ const port = 80;
 app.use(cors())
 
 app.use("/", express.static("./public/"));
-app.use("/projects", express.static("./projects/"));
+app.use("/websitestyleguide", express.static("./projects/websitestyleguide"));
 
 app.listen(port, () => {
     console.log(`app is listening on port ${port}`);
