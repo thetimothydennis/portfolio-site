@@ -37,7 +37,19 @@ h1 a:active {
 }
 
 ul#site-nav {
-    display: flex;
+    display: none;
+}
+
+#site-nav li {
+    text-align: center;
+}
+
+div#burger-menu {
+    display: block;
+}
+
+ul#site-nav {
+    display: none;
     justify-content: space-around;
     position: absolute;
     right: 0;
@@ -51,6 +63,7 @@ ul#site-nav {
     border: 1px solid hsl(50, 30%, 70%);
     padding: 0.25rem 1.5rem;
     background-color: hsl(50, 40%, 30%);
+    color:hsl(50, 30%, 70%);
 }
 
 #site-nav li:hover {
@@ -64,10 +77,6 @@ ul#site-nav {
 #site-nav a {
     text-decoration: none;
     color: inherit;
-}
-
-div#burger-menu {
-    display: none;
 }
 
 #burger-menu svg {
